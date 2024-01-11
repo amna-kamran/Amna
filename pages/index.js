@@ -1,7 +1,8 @@
 import Head from "next/head";
+import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Home.module.css";
-import Navbar from "../components/Navbar";
-import { Comfortaa } from "@next/font/google";
+import NavbarComponent from "../components/Navbar";
+import { Comfortaa } from "next/font/google";
 
 const comfortaa = Comfortaa({
   subsets: ["latin"],
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main className={comfortaa.className}>
-        <Navbar />
+        <NavbarComponent />
         <h1 className={styles.title}>
           HIII im amna <a href="https://nextjs.org">Next.js!</a>
         </h1>

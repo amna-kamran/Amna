@@ -1,3 +1,7 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
 .background {
   display: flex;
   align-items: center;
@@ -14,25 +18,33 @@
 .tabs {
   display: flex;
   justify-content: space-between;
-  width: 20%;
 }
 .tab_text {
   font-size: 12px;
   font-weight: 600;
+  color: white;
+}
+.tab_text:hover {
+  color: rgb(127, 242, 200);
 }
 .name {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 900;
+  color: white;
 }
 .icons {
   display: flex;
   justify-content: space-between;
-  width: 8.5%;
+  width: 20vh;
 }
 .space_icons {
   width: 60%;
 }
 .icon {
   color: rgb(189, 201, 207);
-  height: 3.5vh;
+  height: 4vh;
+}
+
+.name:hover {
+  color: none;
 }
