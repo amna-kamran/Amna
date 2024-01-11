@@ -1,17 +1,22 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
+import { Comfortaa } from "@next/font/google";
 
+const comfortaa = Comfortaa({
+  subsets: ["latin"],
+  weight: ["300"],
+});
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Navbar />
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className={comfortaa.className}>
+        <Navbar />
         <h1 className={styles.title}>
           HIII im amna <a href="https://nextjs.org">Next.js!</a>
         </h1>

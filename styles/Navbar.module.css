@@ -1,0 +1,38 @@
+.background {
+  display: flex;
+  align-items: center;
+  background-color: rgb(21, 56, 86);
+  color: white;
+  width: 100%;
+  padding-inline: 30px;
+  position: fixed;
+  top: 0;
+}
+.space {
+  width: 5vh;
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.tab_text {
+  font-size: 12px;
+  font-weight: 600;
+}
+.name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 8.5%;
+}
+.space_icons {
+  width: 60%;
+}
+.icon {
+  color: rgb(189, 201, 207);
+  height: 3.5vh;
+}
