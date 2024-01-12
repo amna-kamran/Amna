@@ -19,3 +19,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+:root {
+  --dark-navy: #020c1b;
+  --navy: rgb(21, 56, 86);
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --ash: rgb(189, 201, 207);
+  --white: #e6f1ff;
+  --green-bright: #64ffda;
+  --green-tint: rgba(100, 255, 218, 0.1);
+}

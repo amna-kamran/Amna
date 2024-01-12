@@ -1,50 +1,29 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-}
 .background {
-  display: flex;
-  align-items: center;
-  background-color: rgb(21, 56, 86);
-  color: white;
-  width: 100%;
+  background-color: var(--dark-navy);
   padding-inline: 30px;
-  position: fixed;
-  top: 0;
 }
-.space {
-  width: 5vh;
-}
-.tabs {
-  display: flex;
-  justify-content: space-between;
-}
+
 .tab_text {
   font-size: 12px;
   font-weight: 600;
-  color: white;
+  color: var(--ash);
 }
 .tab_text:hover {
-  color: rgb(127, 242, 200);
+  color: var(--green-bright);
+}
+.icon:hover {
+  color: var(--green-bright);
 }
 .name {
   font-size: 14px;
   font-weight: 900;
-  color: white;
+  color: var(--ash);
 }
-.icons {
-  display: flex;
-  justify-content: space-between;
-  width: 20vh;
-}
-.space_icons {
-  width: 60%;
-}
-.icon {
-  color: rgb(189, 201, 207);
-  height: 4vh;
+.name:hover {
+  color: var(--ash);
 }
 
-.name:hover {
-  color: none;
+.icon {
+  color: var(--ash);
+  height: 3.8vh;
 }
