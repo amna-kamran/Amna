@@ -4,21 +4,23 @@
 }
 
 .tab_text {
+  color: var(--ash) !important;
   font-size: 12px;
   font-weight: 600;
-  color: var(--ash);
 }
 .tab_text:hover {
-  color: var(--green-bright);
+  color: var(--green-bright) !important;
 }
+
 .icon:hover {
   color: var(--green-bright);
 }
 .name {
   font-size: 14px;
   font-weight: 900;
-  color: var(--ash);
+  color: var(--ash) !important;
 }
+
 .name:hover {
   color: var(--ash);
 }
@@ -26,4 +28,10 @@
 .icon {
   color: var(--ash);
   height: 3.8vh;
+}
+
+@media only screen and (max-width: 550px) {
+  .tab_text {
+    display: none;
+  }
 }

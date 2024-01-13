@@ -2,8 +2,7 @@ import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Home.module.css";
 import { Comfortaa } from "next/font/google";
-import NavbarComponent from "../components/Navbar";
-import Intro from "../components/Intro";
+import App from "./App.js";
 const comfortaa = Comfortaa({
   subsets: ["latin"],
   weight: ["300"],
@@ -17,8 +16,7 @@ export default function Home() {
       </Head>
 
       <main className={comfortaa.className}>
-        <NavbarComponent />
-        <Intro />
+        <App />
       </main>
     </div>
   );

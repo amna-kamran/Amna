@@ -1,13 +1,6 @@
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { LinkedIn, GitHub } from "@mui/icons-material/";
-import {
-  Nav,
-  Navbar,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import styles from "../styles/Navbar.module.css";
 const NavbarComponent = () => {
   return (
@@ -15,19 +8,18 @@ const NavbarComponent = () => {
       <Navbar.Brand className={styles.name} href="#">
         Amna Kamran
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link className={styles.tab_text} href="#">
+          <Nav.Link className={styles.tab_text} href="#home" active>
             Home
           </Nav.Link>
-          <Nav.Link className={styles.tab_text} href="#">
+          <Nav.Link className={styles.tab_text} href="#about" active>
             About
           </Nav.Link>
-          <Nav.Link className={styles.tab_text} href="#">
+          <Nav.Link className={styles.tab_text} href="#experience" active>
             Experience
           </Nav.Link>
-          <Nav.Link className={styles.tab_text} href="#">
+          <Nav.Link className={styles.tab_text} href="#projects" active>
             Projects
           </Nav.Link>
         </Nav>
