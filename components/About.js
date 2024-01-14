@@ -38,7 +38,7 @@ const About = () => {
               {frameworks.map((framework, i) => {
                 console.log(i);
                 return (
-                  <FadeIn delay={`${i + 1}00ms`}>
+                  <FadeIn delay={`${i + 2}50ms`}>
                     <li>{framework}</li>
                   </FadeIn>
                 );
