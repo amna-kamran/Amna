@@ -1,6 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import styles from "../styles/Intro.module.css";
 import { useState, useEffect } from "react";
+import FadeIn from "./FadeIn";
 const Intro = () => {
   const [fadeIn, setFadeIn] = useState(false);
 
@@ -14,12 +15,12 @@ const Intro = () => {
         <div className={styles.type_container}>
           <TypeAnimation
             className={styles.name}
-            sequence={["i'm"]}
+            sequence={["i'm "]}
             wrapper="p"
             speed={{ type: "keyStrokeDelayInMs", value: 100 }}
             cursor=""
           />
-          <p>" "</p>
+          <div style={{ padding: 5 }} />
           <TypeAnimation
             className={styles.name}
             sequence={["amna"]}
@@ -30,6 +31,7 @@ const Intro = () => {
         </div>
 
         <p className={styles.text}>and i code sometimes</p>
+        <img src="/bow.svg" className={styles.bow} />
       </div>
     </div>
   );

@@ -1,3 +1,15 @@
-.container {
-  color: white;
+.highlight {
+  font-weight: bold;
+  color: var(--green-dull);
+}
+
+.language_container {
+  color: var(--dark-ash);
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.language_container {
+  display: flex;
 }

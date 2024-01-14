@@ -3,14 +3,28 @@ import { LinkedIn, GitHub } from "@mui/icons-material/";
 import { Nav, Navbar } from "react-bootstrap";
 import styles from "../styles/Navbar.module.css";
 const NavbarComponent = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <Navbar fixed="top" className={styles.background}>
-      <Navbar.Brand className={styles.name} href="#">
+      <Navbar.Brand
+        className={styles.name}
+        onClick={handleScrollToTop}
+        href="#"
+      >
         Amna Kamran
       </Navbar.Brand>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link className={styles.tab_text} href="#home" active>
+          <Nav.Link
+            className={styles.tab_text}
+            onClick={handleScrollToTop}
+            active
+          >
             Home
           </Nav.Link>
           <Nav.Link className={styles.tab_text} href="#about" active>

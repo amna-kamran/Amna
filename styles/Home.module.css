@@ -1,8 +1,9 @@
 .container {
   padding-top: 15%;
+  padding-bottom: 15%;
   padding-inline: 5%;
-  height: 100vh;
   background-color: var(--dark-navy);
+  height: auto;
 }
 
 .title a {
