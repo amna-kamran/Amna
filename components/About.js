@@ -23,7 +23,6 @@ const About = () => {
           <div className={styles.language_container}>
             <ul className="ul">
               {languages.map((language, i) => {
-                console.log(i);
                 return (
                   <FadeIn delay={`${i + 1}00ms`}>
                     <li>{language}</li>
@@ -45,6 +44,10 @@ const About = () => {
               })}
             </ul>
           </div>
+          <p className="text">
+            When i'm not coding, i do digital art, crochet and also play video
+            games.
+          </p>
         </div>
       </FadeIn>
     </div>

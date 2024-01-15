@@ -1,0 +1,37 @@
+.card {
+  background-color: var(--navy);
+  align-items: center;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+.card:hover {
+  transform: translateY(-7px);
+  background-color: var(--light-navy);
+}
+.icon {
+  height: 30px;
+  width: 30px;
+  color: var(--lightest-navy);
+}
+.card_title {
+  font-weight: bold;
+  color: var(--green-bright);
+}
+
+.description {
+  color: var(--lightest-navy);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.techstack {
+  color: var(--lightest-navy);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bottom_line {
+  border-bottom: 1.5px dashed var(--lightest-navy);
+  width: auto;
+  margin-bottom: 20px;
+}

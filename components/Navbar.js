@@ -23,6 +23,7 @@ const NavbarComponent = () => {
           <Nav.Link
             className={styles.tab_text}
             onClick={handleScrollToTop}
+            href="#intro"
             active
           >
             Home

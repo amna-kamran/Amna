@@ -35,7 +35,6 @@ img {
 }
 .padding {
   padding-top: 10%;
-  padding-bottom: 5%;
 }
 .heading {
   font-weight: bold;
@@ -61,11 +60,15 @@ img {
   font-size: 16px;
   margin: 0;
 }
+
+.padded_container {
+  padding-top: 10px;
+}
 :root {
   --dark-navy: #020c1b;
-  --navy: rgb(21, 56, 86);
+  --navy: rgb(2, 27, 49);
   --light-navy: #112240;
-  --lightest-navy: #233554;
+  --lightest-navy: #365180;
   --navy-shadow: rgba(2, 12, 27, 0.7);
   --ash: rgb(189, 201, 207);
   --dark-ash: rgb(97, 99, 101);
