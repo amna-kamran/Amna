@@ -49,3 +49,15 @@
 .bullets li::marker {
   color: var(--green-bright);
 }
+
+@media only screen and (max-width: 550px) {
+  .position {
+    font-size: 16px;
+  }
+  .timeline {
+    font-size: 10px;
+  }
+  .bullets {
+    font-size: 12px;
+  }
+}

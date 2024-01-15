@@ -56,10 +56,7 @@ const Project = () => {
           {projects.map((project, i) => {
             return (
               <FadeIn delay={`${i + 1}00ms`}>
-                <div
-                  className={`${"card"} ${styles.card}`}
-                  style={{ width: "21rem", height: "21rem" }}
-                >
+                <div className={`${"card"} ${styles.card}`}>
                   <Nav.Link
                     href={project.url}
                     target="_blank"

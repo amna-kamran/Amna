@@ -30,3 +30,9 @@
   transform: translateY(-7px);
   background-color: var(--light-navy);
 }
+
+@media only screen and (max-width: 1000px) {
+  .picture {
+    display: none;
+  }
+}
