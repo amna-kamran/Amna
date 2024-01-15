@@ -64,6 +64,15 @@ img {
 .padded_container {
   padding-top: 10px;
 }
+.credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-ash);
+  font-size: 12px;
+  font-weight: bold;
+}
 :root {
   --dark-navy: #020c1b;
   --navy: rgb(2, 27, 49);

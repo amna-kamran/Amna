@@ -10,6 +10,7 @@ const Project = () => {
       desc: " A portfolio website showcasing my projects.",
       techstack: "nextjs",
       icons: ["/nextjs.svg"],
+      url: "https://github.com/amna-kamran/Amna",
     },
     {
       title: "Twitter Clone",
@@ -17,6 +18,7 @@ const Project = () => {
       desc: " A semester ending project in react native with backend in firebase.",
       techstack: "react native, firebase",
       icons: ["/react.svg", "/firebase.svg"],
+      url: "https://github.com/amna-kamran/Twitter-Clone-React-Native",
     },
     {
       title: "Todos",
@@ -24,6 +26,7 @@ const Project = () => {
       desc: " A todo app where users can add, delete and edit tasks and images.",
       techstack: "flutter, firebase",
       icons: ["/flutter.svg", "/firebase.svg"],
+      url: "https://github.com/amna-kamran/Todo-App-Flutter",
     },
     {
       title: "Twitter Clone",
@@ -31,6 +34,7 @@ const Project = () => {
       desc: " A semester ending project in PHP and laravel with backend in SQL.",
       techstack: "php, laravel, sql",
       icons: ["/php.svg", "/laravel.svg", "/sql.svg"],
+      url: "https://github.com/amna-kamran/Twitter_Clone",
     },
 
     {
@@ -39,10 +43,11 @@ const Project = () => {
       desc: " A text summarizer for my software engineering course that uses OCR to extract text from images and then summarize them.",
       techstack: "flutter, firebase",
       icons: ["/flutter.svg", "/firebase.svg"],
+      url: "https://github.com/amna-kamran/Text-Summarizer",
     },
   ];
   return (
-    <div id="about">
+    <div id="projects">
       <FadeIn>
         <div className="padding">
           <h3 className="heading">/projects</h3>
@@ -55,7 +60,7 @@ const Project = () => {
                 style={{ width: "21rem", height: "21rem" }}
               >
                 <Nav.Link
-                  href="https://github.com/amna-kamran"
+                  href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mb-3"
