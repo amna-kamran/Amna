@@ -1,7 +1,12 @@
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(21.5rem, 0px));
+}
 .card {
   background-color: var(--navy);
   align-items: center;
   padding-top: 20px;
+  margin-bottom: 10px;
   border-radius: 20px;
 }
 .card:hover {
@@ -13,9 +18,19 @@
   width: 30px;
   color: var(--lightest-navy);
 }
+
+.icon:hover {
+  color: var(--green-bright);
+}
 .card_title {
   font-weight: bold;
   color: var(--green-bright);
+}
+
+.type {
+  color: var(--dark-ash);
+  font-size: 12px;
+  padding-left: 5px;
 }
 
 .description {
