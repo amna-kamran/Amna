@@ -53,38 +53,43 @@ const Project = () => {
           <h3 className="heading">/projects</h3>
         </div>
         <div className={`${"padded_container"} ${styles.project_container}`}>
-          {projects.map((project) => {
+          {projects.map((project, i) => {
             return (
-              <div
-                className={`${"card"} ${styles.card}`}
-                style={{ width: "21rem", height: "21rem" }}
-              >
-                <Nav.Link
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mb-3"
+              <FadeIn delay={`${i + 1}00ms`}>
+                <div
+                  className={`${"card"} ${styles.card}`}
+                  style={{ width: "21rem", height: "21rem" }}
                 >
-                  <GitHub className={styles.icon} />
-                </Nav.Link>
-                <div className="card-body">
-                  <h6 className={styles.card_title}>
-                    {project.title}
-                    <span className={styles.type}> {project.type} </span>
-                  </h6>
+                  <Nav.Link
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mb-3"
+                  >
+                    <GitHub className={styles.icon} />
+                  </Nav.Link>
+                  <div className="card-body">
+                    <h6 className={styles.card_title}>
+                      {project.title}
+                      <span className={styles.type}> {project.type} </span>
+                    </h6>
 
-                  <p className={`${"card-text"} ${styles.description}`}>
-                    {project.desc}
-                  </p>
-                  <div className={styles.bottom_line} />
-                  <p className={styles.techstack}>{project.techstack}</p>
-                  {project.icons?.map((icon) => {
-                    return (
-                      <img src={icon} style={{ marginRight: 5, height: 30 }} />
-                    );
-                  })}
+                    <p className={`${"card-text"} ${styles.description}`}>
+                      {project.desc}
+                    </p>
+                    <div className={styles.bottom_line} />
+                    <p className={styles.techstack}>{project.techstack}</p>
+                    {project.icons?.map((icon) => {
+                      return (
+                        <img
+                          src={icon}
+                          style={{ marginRight: 5, height: 30 }}
+                        />
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
+              </FadeIn>
             );
           })}
         </div>
