@@ -12,6 +12,7 @@ const Intro = () => {
     <div id="intro" className={`${styles.fadeIn} ${fadeIn && styles.active}`}>
       <div className={styles.text_container}>
         <p className={styles.text}>hi,</p>
+
         <div className={styles.type_container}>
           <TypeAnimation
             className={styles.name}

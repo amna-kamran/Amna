@@ -40,7 +40,7 @@ const Project = () => {
     {
       title: "Text Summarizer with OCR",
       type: "App",
-      desc: " A text summarizer for my software engineering course that uses OCR to extract text from images and then summarize them.",
+      desc: " A text summarizer that uses OCR to extract text from images and summarize them.",
       techstack: "flutter, firebase",
       icons: ["/flutter.svg", "/firebase.svg"],
       url: "https://github.com/amna-kamran/Text-Summarizer",
