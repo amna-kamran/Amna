@@ -27,8 +27,8 @@
 
 .icon {
   color: var(--ash);
-  height: 3.8vh;
-  width: 3.8vh;
+  height: 2.5vh;
+  width: 2.5vh;
 }
 
 @media only screen and (max-width: 550px) {
