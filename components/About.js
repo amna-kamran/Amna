@@ -3,7 +3,8 @@ import styles from "../styles/About.module.css";
 import FadeIn from "./FadeIn";
 const About = () => {
   const languages = ["javascript ES6+", "dart", "python", "java"];
-  const frameworks = ["reactJS", "nextjs", "react native", "flutter"];
+  const frameworks = ["reactJS", "nextJS", "react native", "flutter"];
+  const databases = ["MongoDB", "Firebase", "SQL"];
   return (
     <div id="about" className={styles.main_container}>
       <FadeIn>
@@ -40,6 +41,19 @@ const About = () => {
                 return (
                   <FadeIn delay={`${i + 2}50ms`}>
                     <li>{framework}</li>
+                  </FadeIn>
+                );
+              })}
+            </ul>
+          </div>
+          <p className="text">Databases:</p>
+          <div className={styles.language_container}>
+            <ul className="ul">
+              {databases.map((database, i) => {
+                console.log(i);
+                return (
+                  <FadeIn delay={`${i + 2}50ms`}>
+                    <li>{database}</li>
                   </FadeIn>
                 );
               })}

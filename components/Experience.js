@@ -32,8 +32,7 @@ const Experience = () => {
               </li>
               <li>
                 Created a “News App” using the news API and learned how to fetch
-                data before rendering the components use of Provider to access
-                the data on any screen.
+                data before rendering the components.
               </li>
             </ul>
           </div>
